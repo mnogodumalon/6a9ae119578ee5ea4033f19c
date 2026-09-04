@@ -1,0 +1,123 @@
+{
+  "version": 1,
+  "pages": [
+    {
+      "slug": "kursanmeldung",
+      "component": "Kursanmeldung",
+      "title": "Kursanmeldung",
+      "endpoints": [
+        {
+          "entity": "kurse",
+          "op": "list",
+          "fields": [
+            "titel",
+            "instrument",
+            "niveau",
+            "wochentage",
+            "beginn",
+            "ende",
+            "uhrzeit",
+            "maximale_teilnehmer",
+            "preis",
+            "status"
+          ],
+          "scope": "r.v_status == 'geplant' or r.v_status == 'laeuft'",
+          "scope_description": "zeigt nur Kurse mit Status Geplant oder Laeuft",
+          "max_records": 200
+        },
+        {
+          "entity": "anmeldungen",
+          "op": "list",
+          "fields": [
+            "kurs",
+            "status"
+          ],
+          "scope_description": "alle Anmeldungen zur Kapazitätsprüfung (aktive, d.h. nicht abgemeldete)",
+          "max_records": 500
+        },
+        {
+          "entity": "teilnehmer",
+          "op": "create",
+          "fields": [
+            "vorname",
+            "nachname",
+            "geburtsdatum",
+            "email",
+            "telefon",
+            "erziehungsberechtigte_person"
+          ]
+        },
+        {
+          "entity": "anmeldungen",
+          "op": "create",
+          "fields": [
+            "kurs",
+            "teilnehmer",
+            "anmeldedatum",
+            "status"
+          ],
+          "preset_fields": {
+            "bezahlt": false
+          }
+        }
+      ]
+    },
+    {
+      "slug": "kursuebersicht",
+      "component": "Kursuebersicht",
+      "title": "Kursübersicht",
+      "endpoints": [
+        {
+          "entity": "kurse",
+          "op": "list",
+          "fields": [
+            "titel",
+            "instrument",
+            "niveau",
+            "wochentage",
+            "beginn",
+            "ende",
+            "uhrzeit",
+            "maximale_teilnehmer",
+            "preis",
+            "status",
+            "dozent",
+            "raum"
+          ],
+          "scope": "r.v_status == 'geplant' or r.v_status == 'laeuft'",
+          "scope_description": "Zeigt nur Kurse mit Status 'Geplant' oder 'Läuft'",
+          "max_records": 500
+        },
+        {
+          "entity": "anmeldungen",
+          "op": "list",
+          "fields": [
+            "kurs",
+            "status"
+          ],
+          "scope_description": "Alle Anmeldungen zum Berechnen der freien Plätze",
+          "max_records": 500
+        },
+        {
+          "entity": "dozenten",
+          "op": "list",
+          "fields": [
+            "vorname",
+            "nachname"
+          ],
+          "scope_description": "Dozentennamen für die Kursanzeige",
+          "max_records": 500
+        },
+        {
+          "entity": "raeume",
+          "op": "list",
+          "fields": [
+            "name"
+          ],
+          "scope_description": "Raumbezeichnungen für die Kursanzeige",
+          "max_records": 500
+        }
+      ]
+    }
+  ]
+}

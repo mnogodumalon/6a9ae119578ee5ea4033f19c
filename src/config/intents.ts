@@ -20,6 +20,7 @@
 import type { ComponentType } from 'react';
 
 // <custom:intent-imports>
+import { IconUserPlus, IconClipboardCheck, IconCalendarPlus } from '@tabler/icons-react';
 // </custom:intent-imports>
 
 export interface IntentLink {
@@ -42,6 +43,9 @@ export interface IntentLink {
 
 export const INTENTS: IntentLink[] = [
   // <custom:intents>
+  { path: '/intents/schueler-anmelden', label: { de: 'Schüler anmelden', en: 'Enrol student' }, icon: IconUserPlus, description: 'Schüler suchen oder neu anlegen und für einen Kurs anmelden' },
+  { path: '/intents/anwesenheit-erfassen', label: { de: 'Anwesenheit erfassen', en: 'Record attendance' }, icon: IconClipboardCheck, description: 'Anwesenheit aller angemeldeten Schüler für eine Kursstunde eintragen' },
+  { path: '/intents/kurs-planen', label: { de: 'Kurs planen', en: 'Plan course' }, icon: IconCalendarPlus, description: 'Neuen Kurs für einen Dozenten mit passendem Raum anlegen' },
   // </custom:intents>
 ];
 
@@ -52,7 +56,7 @@ export const INTENTS: IntentLink[] = [
  * purpose — a scaffold update resets it to false (self-healing if Phase 2
  * never ran).
  */
-export const INTENTS_PENDING = true;
+export const INTENTS_PENDING = false;
 
 /**
  * When the Phase-1 bundle was deployed (ISO, set by the service together with
