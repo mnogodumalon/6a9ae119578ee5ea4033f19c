@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "pages": [
+    {
+      "slug": "kursanmeldung",
+      "type": "custom",
+      "entity": "anmeldungen",
+      "title": "Kursanmeldung",
+      "published": false,
+      "fields": [
+        "kurs",
+        "teilnehmer",
+        "anmeldedatum",
+        "status",
+        "bezahlt"
+      ]
+    },
+    {
+      "slug": "kursuebersicht",
+      "type": "custom",
+      "entity": "kurse",
+      "title": "Kursübersicht",
+      "published": false,
+      "fields": []
+    }
+  ]
+}

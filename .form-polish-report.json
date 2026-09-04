@@ -1,0 +1,40 @@
+{
+  "entities": {
+    "Dozenten": {
+      "placeholders_set": 6,
+      "defaults_keys": ["aktiv"],
+      "computed_keys": [],
+      "reason": "Reine Stammdaten (Name, Email, Instrumente). Keine Number-Felder, keine applookup-Ketten mit Preisen. Aktiv-Flag als Bool mit true-Default."
+    },
+    "Räume": {
+      "placeholders_set": 3,
+      "defaults_keys": ["klavier_vorhanden"],
+      "computed_keys": [],
+      "reason": "Stammdaten für Räume (Name, Kapazität, Ausstattung). Plätze ist beschreibend (kein Produkt), keine Berechnung nötig."
+    },
+    "Kurse": {
+      "placeholders_set": 12,
+      "defaults_keys": ["beginn", "uhrzeit", "status"],
+      "computed_keys": [],
+      "reason": "Kurs-Stammdaten mit Zeitraum (beginn/ende-Pair), Instruktor+Raum-Zuweisung, fester Kurs-Preis. Preis ist manuell (nicht aus applookup berechenbar). Status mit Geplant-Default, Beginn mit today, Uhrzeit mit today+withTime:true für datetime-Feld."
+    },
+    "Teilnehmer": {
+      "placeholders_set": 7,
+      "defaults_keys": [],
+      "computed_keys": [],
+      "reason": "Reine Teilnehmer-Stammdaten (Name, Geburtsdatum, Kontakt, Bezugsperson, Notizen). Geburtsdatum hat kein Enddatum-Pair, keine berechneten Größen."
+    },
+    "Anmeldungen": {
+      "placeholders_set": 6,
+      "defaults_keys": ["anmeldedatum", "status", "bezahlt"],
+      "computed_keys": [],
+      "reason": "Verknüpfung Teilnehmer+Kurs mit Status und Zahlungs-Flag. Preis im Kurs vorhanden, aber nicht automatisch übernommen (kein Produkt, nur Referenz). Anmeldedatum mit today, Status mit 'neu', Bezahlt mit false."
+    },
+    "Anwesenheiten": {
+      "placeholders_set": 5,
+      "defaults_keys": ["datum", "anwesend", "entschuldigt"],
+      "computed_keys": [],
+      "reason": "Anwesenheits-Tracking (Kurs, Teilnehmer, Datum). Zwei bool-Felder mit optimistischen Defaults (anwesend=true, entschuldigt=false). Keine Berechnung nötig."
+    }
+  }
+}

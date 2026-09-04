@@ -1,0 +1,33 @@
+{
+  "pages": {
+    "en": {
+      " und {0} weitere — neue Anmeldungen warten auf Bestätigung.": " and {0} more — new registrations awaiting confirmation.",
+      " — neue Anmeldung wartet auf Bestätigung.": " — new registration awaiting confirmation.",
+      "Aktive Kurse": "Active Courses",
+      "Alle Anmeldungen bestätigt — gute Lage!": "All registrations confirmed — all good!",
+      "Anmeldungen nach Instrument": "Registrations by Instrument",
+      "Bestätigen": "Confirm",
+      "Jetzt bestätigen": "Confirm Now",
+      "Keine neuen Anmeldungen — alles bestätigt.": "No new registrations — all confirmed.",
+      "Kurs": "Course",
+      "Neu": "New",
+      "Neu / Warteliste": "New / Waitlist",
+      "Neue Anmeldung": "New Registration",
+      "Neue Anmeldungen": "New Registrations",
+      "Neuer Kurs": "New Course",
+      "Plätze": "Spots",
+      "Schüler": "Students",
+      "Teilnehmer": "Participants",
+      "Unbekannt": "Unknown",
+      "Unbezahlt": "Unpaid",
+      "Warteliste": "Waitlist",
+      "Warteliste leer.": "Waitlist empty.",
+      "voll": "full",
+      "{0} Schüler auf der Warteliste.": "{0} student(s) on the waitlist.",
+      "{0} neue Anmeldungen warten auf Bestätigung — darunter {1}.": "{0} new registrations awaiting confirmation — including {1}.",
+      "{0} wartet auf Bestätigung.": "{0} is awaiting confirmation.",
+      "{0} — Anmeldung bestätigt": "{0} — Registration Confirmed"
+    }
+  },
+  "v": 1
+}
