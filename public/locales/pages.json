@@ -1,0 +1,31 @@
+{
+  "pages": {
+    "en": {
+      "Aktive Kurse": "Active Courses",
+      "Alle Beiträge bezahlt — alles im Grünen!": "All fees paid — everything is on track!",
+      "Anmeldung bestätigen": "Confirm Registration",
+      "Anwesenheit": "Attendance",
+      "Anwesenheitsrate": "Attendance Rate",
+      "Bezahlt": "Paid",
+      "Heute 1 Kurs mit {0}.": "1 course today with {0}.",
+      "Heute kein Kurs geplant.": "No course scheduled for today.",
+      "Heute keine Kurse — alles ruhig.": "No courses today — all quiet.",
+      "Heute {0} Kurse — u. a. mit {1}.": "{0} courses today — including with {1}.",
+      "Kurs": "Course",
+      "Kurs anlegen": "Create Course",
+      "Kurse heute": "Courses Today",
+      "Neue Anmeldungen": "New Registrations",
+      "Noch keine Kurse angelegt.": "No courses created yet.",
+      "Unbekannt": "Unknown",
+      "Zahlung ausstehend": "Payment Pending",
+      "Zahlung offen": "Payment Due",
+      "{0} neue Anmeldungen warten auf Bestätigung.": "{0} new registrations are awaiting confirmation.",
+      "{0} — Anmeldung bestätigt": "{0} — Registration Confirmed",
+      "{0} — als bezahlt markiert": "{0} — marked as paid",
+      "Älteste bestätigen": "Confirm Oldest",
+      "— 1 neue Anmeldung wartet auf Bestätigung.": "— 1 new registration awaiting confirmation.",
+      "— {0} neue Anmeldungen warten auf Bestätigung.": "— {0} new registrations awaiting confirmation."
+    }
+  },
+  "v": 1
+}

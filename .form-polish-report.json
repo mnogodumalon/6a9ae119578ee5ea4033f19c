@@ -1,0 +1,40 @@
+{
+  "entities": {
+    "Dozenten": {
+      "placeholders_set": 6,
+      "defaults_keys": ["aktiv"],
+      "computed_keys": [],
+      "reason": "Reine Stammdaten ohne Berechnungslogik. Keine Datumspaarungen, keine applookup-Ziele mit Preisen, keine Multiplikanden."
+    },
+    "Räume": {
+      "placeholders_set": 3,
+      "defaults_keys": ["plaetze"],
+      "computed_keys": [],
+      "reason": "Reine Stammdaten ohne Berechnungslogik. Ein Kapazitätsfeld (Plätze) ohne Beziehung zu anderen Feldgruppen."
+    },
+    "Kurse": {
+      "placeholders_set": 11,
+      "defaults_keys": ["beginn", "status", "maximale_teilnehmer"],
+      "computed_keys": [],
+      "reason": "Kurs-Masterdaten mit Zeitspanne (Beginn/Ende), aber kein berechenbarer Preis — Bildungs-Kurspreise sind Pauschalgebühren, keine Tages-Multiplikationen. Keine Zwischensummen-Logik."
+    },
+    "Teilnehmer": {
+      "placeholders_set": 7,
+      "defaults_keys": [],
+      "computed_keys": [],
+      "reason": "Reine Person-Stammdaten. Keine Berechnungen oder Datumsdifferenzen relevant."
+    },
+    "Anmeldungen": {
+      "placeholders_set": 6,
+      "defaults_keys": ["anmeldedatum", "status"],
+      "computed_keys": [],
+      "reason": "Link-Entity Kurs↔Teilnehmer ohne Berechnungslogik. Der Kurs-Preis ist Masterdatum (applookup-Zielwert), nicht Multiplikand einer Anmeldungs-Menge. Keine Rechnungs-/Preislogik pro Anmeldung."
+    },
+    "Anwesenheiten": {
+      "placeholders_set": 5,
+      "defaults_keys": ["datum"],
+      "computed_keys": [],
+      "reason": "Reine Präsenz-Checkpoint-Entity (Kurs/Teilnehmer/Datum + Anwesenheits-Flags). Keine berechenbaren Größen."
+    }
+  }
+}
