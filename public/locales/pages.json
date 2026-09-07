@@ -1,0 +1,42 @@
+{
+  "pages": {
+    "en": {
+      "Abgeschlossene Kurse können nicht wieder geöffnet werden.": "Completed courses cannot be reopened.",
+      "Alle Beiträge bezahlt.": "All fees paid.",
+      "Alle bestätigen": "Confirm all",
+      "Als bezahlt markieren": "Mark as paid",
+      "Anmeldung": "Registration",
+      "Anmeldung bestätigen": "Confirm Registration",
+      "Bestätigen": "Confirm",
+      "Geplante Kurse": "Planned Courses",
+      "Keine offenen Anmeldungen — alles bestätigt!": "No open registrations — all confirmed!",
+      "Kurs läuft": "Course running",
+      "Kurse aktiv": "Active Courses",
+      "Kurse laufen": "Courses running",
+      "Kurse nach Instrument": "Courses by Instrument",
+      "Neu": "New",
+      "Neue Anmeldung": "New Registration",
+      "Neue Anmeldungen": "New Registrations",
+      "Neue Anmeldungen & Warteliste": "New Registrations & Waitlist",
+      "Neuer Kurs": "New Course",
+      "Offen": "Open",
+      "Offene Zahlungen": "Open Payments",
+      "Schüler gesamt": "Total Students",
+      "Unbekannt": "Unknown",
+      "Unbezahlt": "Unpaid",
+      "Voll": "Full",
+      "Von Warteliste bestätigen": "Confirm from Waitlist",
+      "Warteliste": "Waitlist",
+      "Willkommen bei der Musikschule Klangraum. Plane deinen ersten Kurs!": "Welcome to Musikschule Klangraum. Plan your first course!",
+      "haben sich neu angemeldet": "have newly registered",
+      "hat eine neue Anmeldung — bitte bestätigen.": "has a new registration — please confirm.",
+      "hat sich neu angemeldet": "has newly registered",
+      "hat {0} neue Anmeldungen — bitte bestätigen.": "has {0} new registrations — please confirm.",
+      "{0} in {1} — bestätigt": "{0} in {1} — confirmed",
+      "{0} {1} — alles im Plan.": "{0} {1} — all on track.",
+      "{0} {1} — bitte bestätigen.": "{0} {1} — please confirm.",
+      "{0} — als bezahlt markiert": "{0} — marked as paid"
+    }
+  },
+  "v": 1
+}

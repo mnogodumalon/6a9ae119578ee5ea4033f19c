@@ -1,0 +1,53 @@
+{
+  "DozentenDialog.tsx": {
+    "vorname": "z. B. Maria",
+    "nachname": "z. B. Schmidt",
+    "email": "maria.schmidt@beispiel.de",
+    "telefon": "z. B. +49 30 123456",
+    "instrumente": "Ein Instrument pro Zeile",
+    "aktiv": "Dozent ist verfügbar"
+  },
+  "RaeumeDialog.tsx": {
+    "name": "z. B. Musikzimmer A",
+    "plaetze": "z. B. 20",
+    "klavier_vorhanden": "Klavier vorhanden"
+  },
+  "KurseDialog.tsx": {
+    "titel": "z. B. Anfängerkurs Klavier",
+    "instrument": "Welches Instrument?",
+    "niveau": "Anfänger, Fortgeschritten, Profi",
+    "wochentage": "Unterrichtstage auswählen",
+    "dozent": "Welcher Dozent unterrichtet?",
+    "raum": "In welchem Raum findet der Kurs statt?",
+    "beginn": "Wann startet der Kurs?",
+    "ende": "Wann endet der Kurs?",
+    "uhrzeit": "Uhrzeit des Unterrichts",
+    "maximale_teilnehmer": "z. B. 10",
+    "preis": "z. B. 120,00",
+    "status": "Kurs-Status (Geplant, Läuft, etc.)"
+  },
+  "TeilnehmerDialog.tsx": {
+    "vorname": "z. B. Anna",
+    "nachname": "z. B. Müller",
+    "geburtsdatum": "Wann wurde der Teilnehmer geboren?",
+    "email": "anna.mueller@beispiel.de",
+    "telefon": "z. B. +49 30 654321",
+    "erziehungsberechtigte_person": "Name der Erziehungsperson",
+    "notizen": "Besonderheiten, Allergien, spezielle Wünsche..."
+  },
+  "AnmeldungenDialog.tsx": {
+    "kurs": "Zu welchem Kurs anmelden?",
+    "teilnehmer": "Welcher Teilnehmer meldet sich an?",
+    "anmeldedatum": "Anmeldung vom...",
+    "status": "z. B. Neu, Bestätigt, Warteliste",
+    "bezahlt": "Kursgebühr bezahlt",
+    "bemerkung": "Besondere Hinweise zur Anmeldung..."
+  },
+  "AnwesenheitenDialog.tsx": {
+    "kurs": "In welchem Kurs?",
+    "teilnehmer": "Welcher Teilnehmer?",
+    "datum": "Termin der Unterrichtseinheit",
+    "anwesend": "Teilnehmer war anwesend",
+    "entschuldigt": "Absage war entschuldigt"
+  }
+}

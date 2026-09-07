@@ -1,0 +1,40 @@
+{
+  "entities": {
+    "Dozenten": {
+      "placeholders_set": 6,
+      "defaults_keys": ["aktiv"],
+      "computed_keys": [],
+      "reason": "Reine Stammdaten (Name, Email, Instrumente). Keine numerischen Felder, keine applookups als Quellen, keine Datumspaare → nichts berechenbar."
+    },
+    "Räume": {
+      "placeholders_set": 3,
+      "defaults_keys": ["klavier_vorhanden"],
+      "computed_keys": [],
+      "reason": "Stammdaten mit bool-Flag. Kein Preis, keine Applookups, keine Datumspaare → nichts berechenbar."
+    },
+    "Kurse": {
+      "placeholders_set": 12,
+      "defaults_keys": ["beginn", "ende", "uhrzeit", "status", "maximale_teilnehmer"],
+      "computed_keys": ["_kurs_dauer_tage"],
+      "reason": "Beginn + Ende als Datumspaar ohne bestehendes Dauer-Feld → virtueller _kurs_dauer_tage mit dateDiff. Applookup Raum hat nur plaetze (Kapazität), nicht Preis → kein Gesamtpreis-Computed. Preis ist Kurs-Flatrate, nicht berechenbar."
+    },
+    "Teilnehmer": {
+      "placeholders_set": 7,
+      "defaults_keys": [],
+      "computed_keys": [],
+      "reason": "Stammdaten (Name, Geburt, Kontakt, Notizen). Kein Preis, keine Formeln → nichts berechenbar."
+    },
+    "Anmeldungen": {
+      "placeholders_set": 6,
+      "defaults_keys": ["anmeldedatum", "status", "bezahlt"],
+      "computed_keys": ["_anmeldung_kurs_preis"],
+      "reason": "Applookup Kurs hat Preis-Target → virtueller _anmeldung_kurs_preis zeigt dem User die Kurs-Gebühr direkt. Keine Mengen-Multiplikation (ein Teilnehmer = volle Gebühr). Kein PRODUKT-ARCHETYP."
+    },
+    "Anwesenheiten": {
+      "placeholders_set": 5,
+      "defaults_keys": ["datum", "anwesend", "entschuldigt"],
+      "computed_keys": [],
+      "reason": "Transaktions-Stammdaten (Kurs, Teilnehmer, Datum, bool-Flags). Keine numerischen Felder, nichts berechenbar."
+    }
+  }
+}

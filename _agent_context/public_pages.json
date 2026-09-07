@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "pages": [
+    {
+      "slug": "kursanmeldung",
+      "type": "custom",
+      "entity": "anmeldungen",
+      "title": "Kursanmeldung",
+      "published": false,
+      "fields": [
+        "kurs",
+        "teilnehmer",
+        "anmeldedatum",
+        "status"
+      ]
+    },
+    {
+      "slug": "kursuebersicht",
+      "type": "custom",
+      "entity": "kurse",
+      "title": "Kursübersicht – Musikschule Klangraum",
+      "published": false,
+      "fields": []
+    }
+  ]
+}
