@@ -1,0 +1,110 @@
+{
+  "version": 1,
+  "pages": [
+    {
+      "slug": "kursanmeldung",
+      "component": "Kursanmeldung",
+      "title": "Kursanmeldung – Musikschule Klangraum",
+      "endpoints": [
+        {
+          "entity": "kurse",
+          "op": "list",
+          "fields": [
+            "titel",
+            "instrument",
+            "niveau",
+            "wochentage",
+            "uhrzeit",
+            "maximale_teilnehmer",
+            "preis",
+            "status"
+          ],
+          "scope": "r.v_status == 'geplant'",
+          "scope_description": "Zeigt nur Kurse mit Status 'geplant'",
+          "max_records": 500
+        },
+        {
+          "entity": "anmeldungen",
+          "op": "list",
+          "fields": [
+            "kurs",
+            "status"
+          ],
+          "scope": "r.v_status not in ['abgemeldet']",
+          "scope_description": "Zeigt aktive Anmeldungen (ohne Abgemeldete) für die Kapazitätsprüfung",
+          "max_records": 500
+        },
+        {
+          "entity": "teilnehmer",
+          "op": "create",
+          "fields": [
+            "vorname",
+            "nachname",
+            "geburtsdatum",
+            "email",
+            "telefon",
+            "erziehungsberechtigte_person"
+          ]
+        },
+        {
+          "entity": "anmeldungen",
+          "op": "create",
+          "fields": [
+            "kurs",
+            "teilnehmer",
+            "anmeldedatum",
+            "status"
+          ],
+          "preset_fields": {
+            "bezahlt": false
+          }
+        }
+      ]
+    },
+    {
+      "slug": "kursuebersicht",
+      "component": "Kursuebersicht",
+      "title": "Kursübersicht – Musikschule Klangraum",
+      "endpoints": [
+        {
+          "entity": "kurse",
+          "op": "list",
+          "fields": [
+            "titel",
+            "instrument",
+            "niveau",
+            "wochentage",
+            "uhrzeit",
+            "beginn",
+            "ende",
+            "maximale_teilnehmer",
+            "preis",
+            "status",
+            "dozent"
+          ],
+          "scope": "r.v_status in ['geplant', 'laeuft']",
+          "scope_description": "zeigt nur Kurse mit Status 'geplant' oder 'läuft'",
+          "max_records": 200
+        },
+        {
+          "entity": "dozenten",
+          "op": "list",
+          "fields": [
+            "vorname",
+            "nachname"
+          ],
+          "max_records": 200
+        },
+        {
+          "entity": "anmeldungen",
+          "op": "list",
+          "fields": [
+            "kurs",
+            "status"
+          ],
+          "max_records": 500
+        }
+      ]
+    }
+  ]
+}
