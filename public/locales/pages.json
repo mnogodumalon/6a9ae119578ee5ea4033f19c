@@ -1,0 +1,30 @@
+{
+  "pages": {
+    "en": {
+      "Alle Anmeldungen sind bestätigt.": "All registrations are confirmed.",
+      "Alle bestätigen": "Confirm All",
+      "Anmeldung erfassen": "Add Registration",
+      "Bestätigen": "Confirm",
+      "Geplant": "Scheduled",
+      "Heute": "Today",
+      "Heute keine Kurse geplant.": "No courses scheduled for today.",
+      "Heute keine Kurse.": "No courses today.",
+      "Heute: {0}": "Today: {0}",
+      "Kurs": "Course",
+      "Kurs planen": "Schedule Course",
+      "Neue Anmeldungen": "New Registrations",
+      "Neuer Kurs": "New Course",
+      "Teilnehmer": "Participants",
+      "Unbekannt": "Unknown",
+      "Unbenannter Kurs": "Unnamed Course",
+      "Warteliste": "Waitlist",
+      "aktiv": "active",
+      "{0} bestätigte Anmeldung{1} noch unbezahlt.": "{0} confirmed registration{1} still unpaid.",
+      "{0} neue Anmeldungen warten auf Bestätigung.": "{0} new registrations are awaiting confirmation.",
+      "{0} — Anmeldung bestätigt": "{0} — Registration Confirmed",
+      "{0}/{1} Plätze{2}": "{0}/{1} Spots{2}",
+      "Öffnen": "Open"
+    }
+  },
+  "v": 1
+}

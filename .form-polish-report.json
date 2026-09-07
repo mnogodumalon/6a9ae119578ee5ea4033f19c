@@ -1,0 +1,40 @@
+{
+  "entities": {
+    "Dozenten": {
+      "placeholders_set": 6,
+      "defaults_keys": ["aktiv"],
+      "computed_keys": [],
+      "reason": "Reine Stammdaten-Entity für Musiklehrer. Keine Number-Felder, keine berechenbaren Größen, keine zeitlichen Bezüge."
+    },
+    "Räume": {
+      "placeholders_set": 3,
+      "defaults_keys": ["klavier_vorhanden"],
+      "computed_keys": [],
+      "reason": "Stammdaten-Katalog für Unterrichtsräume. Ein Number-Feld (Plätze), aber keine Aggregation oder Produkte — nur Kapazitäts-Info."
+    },
+    "Kurse": {
+      "placeholders_set": 13,
+      "defaults_keys": ["beginn", "status"],
+      "computed_keys": ["_kurs_dauer_tage"],
+      "reason": "Kurs-Definition mit Beginn+Ende (Datum-Paar). Dauer als virtueller computed für Infozwecke (Tage zwischen Kursbeginn und -ende). Status standardmäßig 'geplant'."
+    },
+    "Teilnehmer": {
+      "placeholders_set": 7,
+      "defaults_keys": [],
+      "computed_keys": [],
+      "reason": "Reine Schüler-Stammdaten. Keine Number-Felder, keine zeitlichen Abhängigkeiten, keine berechenbaren Größen."
+    },
+    "Anmeldungen": {
+      "placeholders_set": 6,
+      "defaults_keys": ["anmeldedatum", "status"],
+      "computed_keys": ["_anmeldung_kurs_preis"],
+      "reason": "Registriert Kurs-Teilnehmer-Zuweisungen. Anmeldedatum=heute (Erfassungs-Datum). Status standardmäßig 'neu'. Virtueller computed für Kurs-Preis-Anzeige (applookup Kurs → preis)."
+    },
+    "Anwesenheiten": {
+      "placeholders_set": 5,
+      "defaults_keys": ["datum"],
+      "computed_keys": [],
+      "reason": "Attendance-Tracking pro Kurstag. Datum standardmäßig heute. Keine Berechnungen — reine Anwesenheits-Erfassung mit bool-Flags."
+    }
+  }
+}

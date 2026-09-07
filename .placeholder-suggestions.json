@@ -1,0 +1,53 @@
+{
+  "DozentenDialog.tsx": {
+    "vorname": "z. B. Johann",
+    "nachname": "z. B. Müller",
+    "email": "z. B. mueller@example.de",
+    "telefon": "z. B. 030 12345678",
+    "instrumente": "Ein Instrument pro Zeile — z. B. Klavier, Gitarre",
+    "aktiv": "Ist dieser Dozent aktiv?"
+  },
+  "RaeumeDialog.tsx": {
+    "name": "z. B. Musiksaal 1",
+    "plaetze": "z. B. 20",
+    "klavier_vorhanden": "Hat der Raum ein Klavier?"
+  },
+  "KurseDialog.tsx": {
+    "titel": "z. B. Anfängerkurs Gitarre",
+    "instrument": "Welches Instrument?",
+    "niveau": "Anfänger, Fortgeschritten oder Profi?",
+    "wochentage": "An welchen Wochentagen findet der Kurs statt?",
+    "dozent": "Welcher Dozent unterrichtet?",
+    "raum": "Welcher Raum wird genutzt?",
+    "beginn": "Wann startet der Kurs?",
+    "ende": "Wann endet der Kurs?",
+    "uhrzeit": "Uhrzeit und Dauer — z. B. 19:00 Uhr",
+    "maximale_teilnehmer": "z. B. 15",
+    "preis": "Kursgebühr in Euro — z. B. 99,90",
+    "status": "Geplant, läuft, abgeschlossen oder abgesagt?"
+  },
+  "TeilnehmerDialog.tsx": {
+    "vorname": "z. B. Anna",
+    "nachname": "z. B. Schmidt",
+    "geburtsdatum": "Wann wurde der Teilnehmer geboren?",
+    "email": "z. B. anna.schmidt@example.de",
+    "telefon": "z. B. 030 87654321",
+    "erziehungsberechtigte_person": "Name des Erziehungsberechtigten",
+    "notizen": "Besonderheiten, allergische Reaktionen, musikalische Vorerfahrung…"
+  },
+  "AnmeldungenDialog.tsx": {
+    "kurs": "Für welchen Kurs anmelden?",
+    "teilnehmer": "Welcher Teilnehmer meldet sich an?",
+    "anmeldedatum": "Anmeldedatum",
+    "status": "Neu, bestätigt, Warteliste oder abgemeldet?",
+    "bezahlt": "Hat der Teilnehmer bezahlt?",
+    "bemerkung": "Anmerkungen zur Anmeldung — Allergien, Besonderheiten…"
+  },
+  "AnwesenheitenDialog.tsx": {
+    "kurs": "Welcher Kurs?",
+    "teilnehmer": "Welcher Teilnehmer?",
+    "datum": "Welcher Kurstag?",
+    "anwesend": "War der Teilnehmer anwesend?",
+    "entschuldigt": "War das Fehlen entschuldigt?"
+  }
+}

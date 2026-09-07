@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "pages": [
+    {
+      "slug": "kursanmeldung",
+      "type": "custom",
+      "entity": "teilnehmer",
+      "title": "Kursanmeldung",
+      "published": false,
+      "fields": [
+        "vorname",
+        "nachname",
+        "geburtsdatum",
+        "email",
+        "telefon",
+        "erziehungsberechtigte_person"
+      ]
+    },
+    {
+      "slug": "kursuebersicht",
+      "type": "custom",
+      "entity": "kurse",
+      "title": "Kursübersicht",
+      "published": false,
+      "fields": []
+    }
+  ]
+}
