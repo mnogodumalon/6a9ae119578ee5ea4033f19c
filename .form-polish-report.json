@@ -1,0 +1,40 @@
+{
+  "entities": {
+    "Dozenten": {
+      "placeholders_set": 6,
+      "defaults_keys": ["aktiv"],
+      "computed_keys": [],
+      "reason": "Reine Stammdaten (Namen, Kontakt, Instrumente, Status). Kein Numerik-Feld mit Beziehung zu anderen Feldern — nichts berechenbar."
+    },
+    "Räume": {
+      "placeholders_set": 3,
+      "defaults_keys": ["plaetze"],
+      "computed_keys": [],
+      "reason": "Stammdaten-Inventar. Plätze ist einzelnes Kapazitätsfeld ohne Berechnung. Keine Produkte, keine Preise, keine Dauer-Relationen."
+    },
+    "Kurse": {
+      "placeholders_set": 11,
+      "defaults_keys": ["beginn", "status", "maximale_teilnehmer"],
+      "computed_keys": [],
+      "reason": "Kurs-Stammdaten mit Datumspaar (Beginn/Ende) und Preis. Preis ist manuell eingetragen (keine Berechnung). Keine Aufenthalts-Heuristik angewendet (kein echter Buchungs-/Anmeldungsprozess mit Nächte/Tage als Multipler). Dauer-Berechnung ist optional; virtuelle Keys sind nicht Pflicht ohne echte Anwendung."
+    },
+    "Teilnehmer": {
+      "placeholders_set": 7,
+      "defaults_keys": [],
+      "computed_keys": [],
+      "reason": "Reine Personenstammdaten. Keine Berechnungen, keine applookup-Preis-Ketten, keine Mengen/Dauer-Beziehungen."
+    },
+    "Anmeldungen": {
+      "placeholders_set": 6,
+      "defaults_keys": ["anmeldedatum", "status", "bezahlt"],
+      "computed_keys": [],
+      "reason": "Anmeldungs-Tracking (Kurs→Teilnehmer). Applookups zeigen Kurse + Teilnehmer ohne lokale Multiplizierer (Anzahl/Tage/Stunden). Kurs-Preis ist Referenz-Stammdatum, nicht berechnet. Keine computed nötig."
+    },
+    "Anwesenheiten": {
+      "placeholders_set": 5,
+      "defaults_keys": ["datum"],
+      "computed_keys": [],
+      "reason": "Erfassungs-Tracking (Kurs, Teilnehmer, Anwesenheit, Entschuldigung). Reine Booleans, keine numerischen Relationen, nichts berechenbar."
+    }
+  }
+}

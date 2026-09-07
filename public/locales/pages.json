@@ -1,0 +1,30 @@
+{
+  "pages": {
+    "en": {
+      " — neue Anmeldung wartet auf Bestätigung.": " — new registration awaiting confirmation.",
+      " — {0} neue Anmeldungen warten auf Bestätigung.": " — {0} new registrations awaiting confirmation.",
+      "Anmeldung bestätigt": "Registration Confirmed",
+      "Bestätigen": "Confirm",
+      "Ersten Kurs anlegen": "Create First Course",
+      "Keine Einträge auf der Warteliste.": "No entries on the waitlist.",
+      "Keine neuen Anmeldungen — alles bestätigt!": "No new registrations — all confirmed!",
+      "Kursstatus aktualisiert": "Course Status Updated",
+      "Laufende Kurse": "Active Courses",
+      "Lege deinen ersten Kurs an, um loszulegen.": "Create your first course to get started.",
+      "Neue Anmeldung": "New Registration",
+      "Neue Anmeldungen": "New Registrations",
+      "Neuer Kurs": "New Course",
+      "Noch keine Kurse angelegt — fang gleich an!": "No courses created yet — get started now!",
+      "Ohne Titel": "Untitled",
+      "Unbekannt": "Unknown",
+      "Unbezahlt": "Unpaid",
+      "Warteliste": "Waitlist",
+      "Willkommen in der Musikschule!": "Welcome to the Music School!",
+      "{0} Kurse laufen, {1} in Planung — {2} Dozenten aktiv.": "{0} courses running, {1} in planning — {2} instructors active.",
+      "{0}/{1} Pl.": "{0}/{1} Spots",
+      "→ Bestätigen": "→ Confirm",
+      "✓ Bestätigen": "✓ Confirm"
+    }
+  },
+  "v": 1
+}
