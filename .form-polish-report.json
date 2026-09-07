@@ -1,0 +1,40 @@
+{
+  "entities": {
+    "Dozenten": {
+      "placeholders_set": 6,
+      "defaults_keys": ["aktiv"],
+      "computed_keys": [],
+      "reason": "Reine Stammdaten (Kontakt & Eigenschaften), keine Number-Felder, keine Lookup-Multiplikatoren. Einziger Default: aktiv=true bei Neuanlage."
+    },
+    "Räume": {
+      "placeholders_set": 3,
+      "defaults_keys": [],
+      "computed_keys": [],
+      "reason": "Reine Stammdaten (Kapazität & Ausstattung), keine Berechnungen. Das Number-Feld 'plaetze' ist nicht berechenbar — Input bleibt Eingabe."
+    },
+    "Kurse": {
+      "placeholders_set": 12,
+      "defaults_keys": ["beginn", "status", "maximale_teilnehmer"],
+      "computed_keys": [],
+      "reason": "Kurse mit fester Pauschale (preis), kein Multiplikator-Model (nicht pro Nacht/pro Stunde). Datumspaar (beginn/ende) ist Zeitrahmen, nicht Berechnungsgrundlage. Status=geplant, maximale_teilnehmer Minimum 1."
+    },
+    "Teilnehmer": {
+      "placeholders_set": 7,
+      "defaults_keys": [],
+      "computed_keys": [],
+      "reason": "Reine Stammdaten (Kontakt & Erziehungsberechtige), kein Preis, keine Aggregation, keine Berechnungen."
+    },
+    "Anmeldungen": {
+      "placeholders_set": 6,
+      "defaults_keys": ["anmeldedatum", "status", "bezahlt"],
+      "computed_keys": [],
+      "reason": "Link zwischen Teilnehmer & Kurse ohne eigene Preisberechnung. Preis ist im Kurs definiert (applookup-Hinweis nur). Status=neu (Eingang), bezahlt=false (pessimistischer Default)."
+    },
+    "Anwesenheiten": {
+      "placeholders_set": 5,
+      "defaults_keys": ["datum", "anwesend", "entschuldigt"],
+      "computed_keys": [],
+      "reason": "Pure Tracking-Einträge ohne Preise/Kosten. datum=today, anwesend/entschuldigt=false als Default (User checkt aktive Anwesenheit)."
+    }
+  }
+}

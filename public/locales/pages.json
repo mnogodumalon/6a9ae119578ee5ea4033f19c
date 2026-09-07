@@ -1,0 +1,36 @@
+{
+  "pages": {
+    "en": {
+      "Aktive Kurse": "Active Courses",
+      "Anmeldung bestätigen": "Confirm Registration",
+      "Anmeldung bestätigt": "Registration Confirmed",
+      "Anmeldung erfassen": "Add Registration",
+      "Jetzt bestätigen": "Confirm Now",
+      "Keine Einträge für diesen Filter.": "No entries for this filter.",
+      "Keine aktiven Kurse": "No Active Courses",
+      "Keine neuen Anmeldungen — alles bestätigt!": "No new registrations — all confirmed!",
+      "Neu": "New",
+      "Neue Anmeldungen": "New Registrations",
+      "Neuer Kurs": "New Course",
+      "Noch keine Schüler — lege den ersten an.": "No students yet — create the first one.",
+      "Schüler & Teilnehmer": "Students & Participants",
+      "Schüler anlegen": "Create Student",
+      "Schüler gesamt": "Total Students",
+      "Status geändert": "Status Changed",
+      "Unbekannt": "Unknown",
+      "Unbezahlt": "Unpaid",
+      "Unbezahlte Anmeldungen": "Unpaid Registrations",
+      "Warteliste": "Waitlist",
+      "Willkommen! Lege jetzt den ersten Kurs an.": "Welcome! Create your first course now.",
+      "neue Anmeldung wartet auf Bestätigung.": "new registration awaiting confirmation.",
+      "neue Anmeldungen warten auf Bestätigung.": "new registrations awaiting confirmation.",
+      "unbezahlt": "unpaid",
+      "{0} Kurs": "{0} Course",
+      "{0} Kurse": "{0} Courses",
+      "{0} Kurse laufen aktuell — {1} Schüler im System.": "{0} courses currently running — {1} students in the system.",
+      "{0} Schüler registriert — plane den nächsten Kurs.": "{0} students registered — plan the next course.",
+      "✓ Bestätigen": "✓ Confirm"
+    }
+  },
+  "v": 1
+}
