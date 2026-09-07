@@ -1,0 +1,40 @@
+{
+  "entities": {
+    "Dozenten": {
+      "placeholders_set": 6,
+      "defaults_keys": ["aktiv"],
+      "computed_keys": [],
+      "reason": "Reine Stammdaten (Vorname, Nachname, Email, Telefon, Instrumente), keine Preise, keine berechenbaren Felder. Nur 'aktiv' als Default = true."
+    },
+    "Räume": {
+      "placeholders_set": 3,
+      "defaults_keys": ["plaetze"],
+      "computed_keys": [],
+      "reason": "Stammdaten mit Raumkapazität. plaetze = 1 als Startdefault. Keine Applookup-Ketten zu Preis-Targets, nichts berechenbar."
+    },
+    "Kurse": {
+      "placeholders_set": 11,
+      "defaults_keys": ["beginn", "ende", "maximale_teilnehmer", "status"],
+      "computed_keys": [],
+      "reason": "Kurs-Konfiguration mit Datums-Paar (beginn/ende mit withTime:true wegen uhrzeit-Feld), Status-Lookup (geplant), Teilnehmer-Limit (1). Applookup auf Dozenten und Räume, aber keine Preis-Targets in den Applookup-Zielen — daher kein computed für Gesamtkosten."
+    },
+    "Teilnehmer": {
+      "placeholders_set": 7,
+      "defaults_keys": [],
+      "computed_keys": [],
+      "reason": "Reine Stammdaten (Vorname, Nachname, Geburtsdatum, Kontakt, Erziehungsberechtigte, Notizen). Keine Number-Felder, keine Preise, keine berechenbaren Aggregate."
+    },
+    "Anmeldungen": {
+      "placeholders_set": 6,
+      "defaults_keys": ["anmeldedatum", "status", "bezahlt"],
+      "computed_keys": [],
+      "reason": "Anmeldungs-Tracking mit Applookup zu Kursen (enthält Preis) und Teilnehmern. Aber: kein Number-Feld in Anmeldungen für 'Menge' oder 'Gesamtpreis' — die Anmeldung ist 1:1 zu Kurs und Teilnehmer. Applookup löst Kurspreis auf, aber ohne ein Mengen-Feld ist keine Multiplikation sinnvoll (ein Preis von Kursen ist nicht dasselbe wie Rechnungsbetrag für eine Anmeldung). Status=neu, bezahlt=false als Startdefaults."
+    },
+    "Anwesenheiten": {
+      "placeholders_set": 5,
+      "defaults_keys": ["datum", "anwesend"],
+      "computed_keys": [],
+      "reason": "Anwesenheits-Tracking (welcher Teilnehmer war an welchem Kurstag anwesend). Applookups zu Kursen/Teilnehmern, aber nur Bool-Felder für die Logik. datum=heute, anwesend=true als Defaults. Keine berechenbaren Felder."
+    }
+  }
+}

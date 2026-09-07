@@ -1,0 +1,41 @@
+{
+  "pages": {
+    "en": {
+      "+ Anmelden": "+ Register",
+      "1 neue Anmeldung wartet auf Bestätigung.": "1 new registration is awaiting confirmation.",
+      "Anmeldung": "Registration",
+      "Anmeldungen gesamt": "Total Registrations",
+      "Anmeldungen nach Status": "Registrations by Status",
+      "Bestätigen": "Confirm",
+      "Erste bestätigen": "Confirm First",
+      "Erstelle deinen ersten Kurs und beginne mit der Anmeldung von Schülern.": "Create your first course and start enrolling students.",
+      "Ersten Kurs anlegen": "Create First Course",
+      "Keine neuen Anmeldungen — alles bestätigt.": "No new registrations — all confirmed.",
+      "Kurs": "Course",
+      "Kurs planen": "Schedule Course",
+      "Kurs unbekannt": "Course unknown",
+      "Kurse nach Instrument": "Courses by Instrument",
+      "Laufende Kurse": "Active Courses",
+      "Neu": "New",
+      "Neu & unbestätigt": "New & Unconfirmed",
+      "Neue Anmeldung": "New Registration",
+      "Neue Anmeldungen": "New Registrations",
+      "Noch kein Kurs aktiv — plane den ersten.": "No active course yet — schedule the first one.",
+      "Noch keine Daten": "No data yet",
+      "Noch keine Daten — leg den ersten Kurs an.": "No data yet — create the first course.",
+      "Plätze": "Spots",
+      "Richte deine Musikschule ein — leg den ersten Kurs an.": "Set up your music school — create the first course.",
+      "Unbekannt": "Unknown",
+      "Unbezahlt (bestätigt)": "Unpaid (confirmed)",
+      "Warteliste": "Waitlist",
+      "unbezahlt": "unpaid",
+      "{0} Kurse laufen gerade — alles im Zeitplan.": "{0} courses are running — all on schedule.",
+      "{0} neue Anmeldungen warten auf Bestätigung.": "{0} new registrations are awaiting confirmation.",
+      "{0} und weitere warten auf Bestätigung.": "{0} and others are awaiting confirmation.",
+      "{0} wartet auf Bestätigung.": "{0} is awaiting confirmation.",
+      "{0} — bestätigt": "{0} — confirmed",
+      "✓ Bestätigen": "✓ Confirm"
+    }
+  },
+  "v": 1
+}
