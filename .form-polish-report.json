@@ -1,0 +1,40 @@
+{
+  "entities": {
+    "Dozenten": {
+      "placeholders_set": 6,
+      "defaults_keys": ["aktiv"],
+      "computed_keys": [],
+      "reason": "Reine Stammdaten (Personalien, Instrumente) ohne numerische Beziehungen oder Berechnungen"
+    },
+    "Räume": {
+      "placeholders_set": 3,
+      "defaults_keys": [],
+      "computed_keys": [],
+      "reason": "Stammdaten für Raumausstattung; Platzanzahl ist eine feste Eigenschaft, nicht berechenbar"
+    },
+    "Kurse": {
+      "placeholders_set": 12,
+      "defaults_keys": ["status", "maximale_teilnehmer"],
+      "computed_keys": [],
+      "reason": "Kurs-Verwaltung mit fixen Preisen und Terminen; kein Preis×Menge-Muster (Preis ist pro Anmeldung, nicht pro Einheit oder Tag)"
+    },
+    "Teilnehmer": {
+      "placeholders_set": 7,
+      "defaults_keys": [],
+      "computed_keys": [],
+      "reason": "Personen-Stammdaten (Namen, Kontakt, Geburtsdatum); keine numerischen oder Datums-Berechnungen"
+    },
+    "Anmeldungen": {
+      "placeholders_set": 6,
+      "defaults_keys": ["anmeldedatum", "status"],
+      "computed_keys": [],
+      "reason": "Verbindungs-Entity mit applookups; Anmeldedatum wird heute vorbelegt, Status-Lookup auf 'neu' als Default"
+    },
+    "Anwesenheiten": {
+      "placeholders_set": 5,
+      "defaults_keys": ["datum"],
+      "computed_keys": [],
+      "reason": "Tracking-Daten mit Kurs/Teilnehmer/Datum und zwei Bool-Flags; keine berechenbaren Größen"
+    }
+  }
+}

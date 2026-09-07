@@ -1,0 +1,53 @@
+{
+  "DozentenDialog.tsx": {
+    "vorname": "z. B. Maria",
+    "nachname": "z. B. Mueller",
+    "email": "z. B. maria.mueller@example.com",
+    "telefon": "z. B. +49 123 4567890",
+    "instrumente": "Ein Instrument pro Zeile",
+    "aktiv": "Wird aktiv als Standard gesetzt"
+  },
+  "RaeumeDialog.tsx": {
+    "name": "z. B. Raum A1",
+    "plaetze": "z. B. 15",
+    "klavier_vorhanden": "Kreuzen Sie an, falls vorhanden"
+  },
+  "KurseDialog.tsx": {
+    "titel": "z. B. Anfänger-Klavier",
+    "instrument": "Wähle ein Instrument",
+    "niveau": "z. B. Anfänger",
+    "wochentage": "Welche Tage finden statt?",
+    "dozent": "Welcher Dozent?",
+    "raum": "Welcher Raum?",
+    "beginn": "Wann startet der Kurs?",
+    "ende": "Wann endet der Kurs?",
+    "uhrzeit": "Kurszeit wählen",
+    "maximale_teilnehmer": "z. B. 12",
+    "preis": "z. B. 60,00",
+    "status": "z. B. Geplant"
+  },
+  "TeilnehmerDialog.tsx": {
+    "vorname": "z. B. Anna",
+    "nachname": "z. B. Schneider",
+    "geburtsdatum": "Geburtsdatum wählen",
+    "email": "z. B. anna@example.com",
+    "telefon": "z. B. +49 987 6543210",
+    "erziehungsberechtigte_person": "z. B. Max Schneider",
+    "notizen": "Besonderheiten, Allergien, Wünsche..."
+  },
+  "AnmeldungenDialog.tsx": {
+    "kurs": "Zu welchem Kurs?",
+    "teilnehmer": "Wer meldet sich an?",
+    "anmeldedatum": "Heute",
+    "status": "z. B. Neu",
+    "bezahlt": "Kreuzen Sie an, wenn bezahlt",
+    "bemerkung": "Spezielle Wünsche oder Anmerkungen..."
+  },
+  "AnwesenheitenDialog.tsx": {
+    "kurs": "Welcher Kurs?",
+    "teilnehmer": "Welcher Teilnehmer?",
+    "datum": "Datum wählen",
+    "anwesend": "Kreuzen Sie an, falls anwesend",
+    "entschuldigt": "Kreuzen Sie an, falls entschuldigt"
+  }
+}

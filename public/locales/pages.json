@@ -1,0 +1,36 @@
+{
+  "pages": {
+    "en": {
+      "Anmeldung bestätigen": "Confirm Registration",
+      "Anmeldung erfassen": "Add Registration",
+      "Anmeldung hinzufügen": "Add Registration",
+      "Auf bestätigt setzen": "Set to Confirmed",
+      "Bestätigen": "Confirm",
+      "In Planung": "In Planning",
+      "Jetzt bestätigen": "Confirm Now",
+      "Kein Dozent": "No Instructor",
+      "Keine neuen Anmeldungen — alles bestätigt.": "No new registrations — all confirmed.",
+      "Kurs unbekannt": "Course Unknown",
+      "Kurs — Status geändert": "Course — Status Changed",
+      "Kurse nach Instrument": "Courses by Instrument",
+      "Laufende Kurse": "Active Courses",
+      "Neue Anmeldungen": "New Registrations",
+      "Neuen Schüler anlegen": "Create New Student",
+      "Neuer Kurs": "New Course",
+      "Noch keine Kurse angelegt — fange gleich an!": "No courses created yet — get started!",
+      "Teilnehmer": "Participants",
+      "Unbekannt": "Unknown",
+      "Unbenannter Kurs": "Unnamed Course",
+      "Voll": "Full",
+      "Warteliste": "Waitlist",
+      "Warteliste — bestätigt": "Waitlist — Confirmed",
+      "stehen auf der Warteliste — Plätze sind frei geworden.": "are on the waitlist — spots have become available.",
+      "steht auf der Warteliste — ein Platz ist frei geworden.": "is on the waitlist — a spot has become available.",
+      "{0} laufende Kurse, {1} in Planung — Dozenten: {2}": "{0} active courses, {1} in planning — Instructors: {2}",
+      "{0} neue Anmeldung{1} warten auf Bestätigung — Dozenten: {2}": "{0} new registration{1} awaiting confirmation — Instructors: {2}",
+      "{0} — bestätigt": "{0} — Confirmed",
+      "{0} — von Warteliste bestätigt": "{0} — Confirmed from Waitlist"
+    }
+  },
+  "v": 1
+}
