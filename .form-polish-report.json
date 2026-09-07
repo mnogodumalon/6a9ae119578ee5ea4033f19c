@@ -1,0 +1,40 @@
+{
+  "entities": {
+    "Dozenten": {
+      "placeholders_set": 6,
+      "defaults_keys": ["aktiv"],
+      "computed_keys": [],
+      "reason": "Reine Stammdatenverwaltung von Dozenten — keine Preisfelder, Datumspaarungen oder berechenbaren Größen vorhanden"
+    },
+    "Räume": {
+      "placeholders_set": 3,
+      "defaults_keys": ["plaetze", "klavier_vorhanden"],
+      "computed_keys": [],
+      "reason": "Ressourcenstammdaten ohne Berechnung — nur Name und Kapazität, kein applookup mit numerischen Zielen"
+    },
+    "Kurse": {
+      "placeholders_set": 12,
+      "defaults_keys": ["beginn", "ende", "uhrzeit", "maximale_teilnehmer", "status"],
+      "computed_keys": ["_kurs_dauer_tage"],
+      "reason": "Datumspaar (beginn/ende) erzeugt virtuelle Dauer-Anzeige; Preis ist nicht berechenbar (applookup auf Raum liefert nur Kapazität, nicht Preis)"
+    },
+    "Teilnehmer": {
+      "placeholders_set": 7,
+      "defaults_keys": [],
+      "computed_keys": [],
+      "reason": "Stammdaten von Kursteilnehmern — keine Preisfelder oder Datumskombinationen mit Berechnungssemantik"
+    },
+    "Anmeldungen": {
+      "placeholders_set": 6,
+      "defaults_keys": ["anmeldedatum", "status", "bezahlt"],
+      "computed_keys": ["_anmeldung_kurspreis"],
+      "reason": "Anmeldedatum hat Erfassungs-Semantik (default heute); Status hat Anfangswert (neu); virtueller Computed zeigt Kurspreis aus applookup(kurs, preis) zur Information"
+    },
+    "Anwesenheiten": {
+      "placeholders_set": 5,
+      "defaults_keys": ["datum", "anwesend", "entschuldigt"],
+      "computed_keys": [],
+      "reason": "Einfaches Tracking von Anwesenheit — ein Datum (keine Paarung), zwei Boolesche Flags; keine Preisberechnung"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "pages": {
+    "en": {
+      " — Kurs: {0}": " — Course: {0}",
+      "Aktive Kurse": "Active Courses",
+      "Anwesenheit": "Attendance",
+      "Bestätigen": "Confirm",
+      "Ersten Kurs anlegen": "Create First Course",
+      "Ersten Schüler anlegen": "Create First Student",
+      "Heute keine Kurse geplant": "No courses scheduled today",
+      "Heute keine neuen Anmeldungen — alles im Griff!": "No new registrations today — everything under control!",
+      "Jetzt bestätigen": "Confirm Now",
+      "Klangraum einrichten": "Set Up Klangraum",
+      "Kurs planen": "Schedule Course",
+      "Kurse heute": "Courses Today",
+      "Kurse nach Instrument": "Courses by Instrument",
+      "Lege zuerst Dozenten und Räume an, dann plane deinen ersten Kurs.": "First add instructors and rooms, then schedule your first course.",
+      "Neue Anmeldung": "New Registration",
+      "Ohne Titel": "Untitled",
+      "Status auf {0} gesetzt": "Status set to {0}",
+      "Teilnehmer": "Participants",
+      "Unbekannt": "Unknown",
+      "Unbezahlt": "Unpaid",
+      "Warteliste": "Waitlist",
+      "warten auf Bestätigung": "waiting for confirmation",
+      "wartet auf Bestätigung": "waiting for confirmation",
+      "{0} aktive Kurse laufen gerade.": "{0} active courses running right now.",
+      "{0} – neue Anmeldung{1} zu bearbeiten.": "{0} – new registration{1} to process.",
+      "{0} — bestätigt": "{0} — confirmed"
+    }
+  },
+  "v": 1
+}
